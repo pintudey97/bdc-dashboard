@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Analytics - Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="nav-layer" style="display: none;"></div>
+    <nav class="side-navbar">
+      <div class="navtoggle">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="" class="logo-sm">
+        <ul class="icons">
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Home"><i class="fas fa-home"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Users Group"><i class="fas fa-users"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Users"><i class="fas fa-user"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Secure Users"><i class="fas fa-user-check"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Files"><i class="fas fa-file-alt"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Genuine"><i class="fas fa-shield-alt"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Contact Book"><i class="fas fa-id-badge"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Settings"><i class="fas fa-cog"></i></a></li>
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Help & Supports"><i class="fas fa-headphones-alt"></i></a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href="#" class="tooltipshow" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Logout"><i class="fas fa-sign-out-alt"></i></a></li>
+          <li><a href="#"><img src="images/avtar.png" alt="avtar"></a></li>
+        </ul>
+      </div>
+      <div class="nav-right hide">
+        <img src="images/logo-2.png" alt="logo-2">
+        <div class="nav-deatils">
+          <div class="navtitle"><i class="fas fa-home"></i> Dashboard</div>
+          <ul class="navlist">
+            <li><a href="#">Deleargroup Dashboard</a></li>
+            <li><a href="#">Deleargroup Dashboard</a></li>
+          </ul>
+          <div class="navtitle"><i class="fas fa-users"></i> Organization Management</div>
+          <ul class="navlist">
+            <li><a href="#">Deleargroup Dashboard</a></li>
+            <li><a href="#">Deleargroup Dashboard</a></li>
+            <li><a href="#">Manage Department</a></li>
+            <li><a href="#">Manage Role</a></li>
+            <li><a href="#">Manage Users</a></li>
+          </ul>
+          <div class="navtitle"><i class="fas fa-user"></i> Lead Management</div>
+          <ul class="navlist">
+            <li><a href="#">Lead Source</a></li>
+            <li><a href="#">Lead Type</a></li>
+            <li><a href="#">Lead Tire</a></li>
+            <li><a href="#">Qune Management</a></li>
+            <li><a href="#">All leads</a></li>
+            <li><a href="#">Lead Limit</a></li>
+          </ul>
+          <div class="navtitle"><i class="fas fa-user-check"></i> Inventor Management</div>
+          <ul class="navlist">
+            <li><a href="#">Auto Inventor</a></li>
+            <li><a href="#">RK Inventor</a></li>
+            <li><a href="#">Agent view</a></li>
+          </ul>
+          <div class="navtitle"><i class="fas fa-shield-alt"></i> Warranty Management</div>
+          <ul class="navlist">
+            <li><a href="#">Report</a></li>
+          </ul>
+          <div class="navtitle"><i class="fas fa-id-badge"></i> Reporting</div>
+          <ul class="navlist">
+            <li><a href="#">Company report</a></li>
+            <li><a href="#">All lead report</a></li>
+            <li><a href="#">Lead details report</a></li>
+            <li><a href="#">Agent report</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+    <main class="page open">
+      <section class="page-wrap">
+        <!-- Dashboard Top Start  -->
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+              <h1 class="page-title">BDC Dashboard</h1>
+              <p class="page-breadcrumbs"><a href="#">Dashboard</a> > BDC Dashboard</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="boxicon ms-0"><i class="far fa-moon"></i></div>
+                <div class="boxicon"><i class="fas fa-volume-up"></i></div>
+                <div class="boxicon"><i class="far fa-bell"></i></div>
+                <div class="weather">
+                  <i class="fas fa-cloud"></i>
+                  <span class="temp">56&deg;</span>
+                  <span class="area">Ontario</span>
+                </div>
+              </div>
+              <div class="d-md-flex d-lg-flex align-items-center justify-content-end">
+                <div class="dropdown-select">
+                  <select name="" id="">
+                    <option value="">Lead Type</option>
+                  </select>
+                </div>
+                <div class="dropdown-select">
+                  <select name="" id="" class=" _user-icon">
+                    <option value="">Select Usename</option>
+                  </select>
+                </div>
+                <div class="dropdown-select">
+                  <input type="text" name="" id="" value="01 May 2021 - 31 May 2021" readonly class="_calnder-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Dashboard Top End  -->
+
+        <!-- Tile Start  -->
+        <div class="tile-group">
+        <div class="titlebox call ms-0">
+          <div class="titlebox-name">Calls</div>
+          <div class="titlebox-value">1222</div>
+          <div class="titlebox-icon"><i class="fas fa-phone-alt"></i></div>
+        </div>
+        <div class="titlebox message">
+          <div class="titlebox-name">Message</div>
+          <div class="titlebox-value">375</div>
+          <div class="titlebox-icon"><i class="fas fa-comment-alt"></i></div>
+        </div>
+        <div class="titlebox email">
+          <div class="titlebox-name">Email</div>
+          <div class="titlebox-value">257</div>
+          <div class="titlebox-icon"><i class="fas fa-envelope"></i></div>
+        </div>
+        <div class="titlebox blocked">
+          <div class="titlebox-name">Blocked<br /> Visits</div>
+          <div class="titlebox-value">27</div>
+          <div class="titlebox-icon"><i class="fas fa-handshake"></i></div>
+        </div>
+        <div class="titlebox up-appoiment">
+          <div class="titlebox-name">Upcaomeing<br /> Appoiments</div>
+          <div class="titlebox-value">178</div>
+          <div class="titlebox-icon"><i class="fas fa-calendar-check"></i></div>
+        </div>
+        <div class="titlebox solds">
+          <div class="titlebox-name">Solds</div>
+          <div class="titlebox-value">69</div>
+          <div class="titlebox-icon"><i class="fas fa-tag"></i></div>
+        </div>
+        </div>
+        <!-- Tile End  -->
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+            <div class="box">
+              <div class="d-flex align-items-start justify-content-between">
+                <h2 class="title">Agents</h2>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <ul class="user-list">
+                <li>
+                  <div class="d-flex align-items-center">
+                    <img src="images/avtar-2.png" alt="avtar" class="user-dp">
+                    <div>
+                      <p class="agent-name">Karin Okla</p>
+                      <p class="agent-area">Barrie</p>
+                    </div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <img src="images/avtar-2.png" alt="avtar" class="user-dp">
+                    <div>
+                      <p class="agent-name">Karin Okla</p>
+                      <p class="agent-area">Barrie</p>
+                    </div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <img src="images/avtar-2.png" alt="avtar" class="user-dp">
+                    <div>
+                      <p class="agent-name">Karin Okla</p>
+                      <p class="agent-area">Barrie</p>
+                    </div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center">
+                    <img src="images/avtar-2.png" alt="avtar" class="user-dp">
+                    <div>
+                      <p class="agent-name">Karin Okla</p>
+                      <p class="agent-area">Barrie</p>
+                    </div>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="box box-table">
+              <div class="box-table-head">
+                <h2 class="title">Outgoing Activities</h2>
+              </div>
+              <div class="table-responsive">
+              <table class="table table-striped outgoing-table mb-0">
+                <thead>
+                  <tr>
+                    <th><p class="call"><i class="fas fa-phone-alt"></i> Calls</p></th>
+                    <th><p class="email"><i class="fas fa-envelope"></i> Emails</p></th>
+                    <th><p class="sms"><i class="fas fa-comment-alt"></i> SMS</p></th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>200</td>
+                    <td>135</td>
+                    <td>54</td>
+                    <td>405</td>
+                  </tr>
+                  <tr>
+                    <td>121</td>
+                    <td>99</td>
+                    <td>22</td>
+                    <td>221</td>
+                  </tr>
+                  <tr>
+                    <td>111</td>
+                    <td>88</td>
+                    <td>35</td>
+                    <td>161</td>
+                  </tr>
+                  <tr>
+                    <td>111</td>
+                    <td>88</td>
+                    <td>35</td>
+                    <td>161</td>
+                  </tr>
+                  <tr>
+                    <td>111</td>
+                    <td>88</td>
+                    <td>35</td>
+                    <td>161</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+            <div class="box">
+              <div class="d-sm-flex d-md-flex d-lg-flex align-items-start justify-content-between">
+                <h2 class="title mb-2 mb-sm-4 mb-md-4 mb-lg-4">Performances</h2>
+                <div class="mb-4 mb-sm-0 mb-md-0 mb-lg-0">
+                <select class="dropdown-sm">
+                  <option value="">Month</option>
+                </select>
+                <select class="dropdown-sm">
+                  <option value="">2022</option>
+                </select>
+              </div>
+              </div>
+              <div class="chart-section">
+                <figure class="highcharts-figure mb-0" >
+                  <div id="container" style="height: 265px;"></div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="box box-table">
+                <div class="box-table-head">
+                  <h2 class="title">Stores</h2>
+                </div>
+                <div class="table-responsive">
+                <table class="table table-striped outgoing-table mb-0 min-w-550">
+                  <thead>
+                    <tr>
+                      <th>List</th>
+                      <th>Leads Contacted</th>
+                      <th>Appoiments</th>
+                      <th>Sales</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Barrie</td>
+                      <td>135</td>
+                      <td>54</td>
+                      <td>405</td>
+                    </tr>
+                    <tr>
+                      <td>London</td>
+                      <td>99</td>
+                      <td>22</td>
+                      <td>221</td>
+                    </tr>
+                    <tr>
+                      <td>Ingersol</td>
+                      <td>88</td>
+                      <td>35</td>
+                      <td>161</td>
+                    </tr>
+                    <tr>
+                      <td>Hamilton</td>
+                      <td>88</td>
+                      <td>35</td>
+                      <td>161</td>
+                    </tr>
+                    <tr>
+                      <td>Landon</td>
+                      <td>88</td>
+                      <td>35</td>
+                      <td>161</td>
+                    </tr>
+                    <tr>
+                      <td>Landon</td>
+                      <td>88</td>
+                      <td>35</td>
+                      <td>161</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="box box-table">
+              <div class="box-table-head">
+                <h2 class="title">Ratios</h2>
+              </div>
+              <div class="table-responsive">
+              <table class="table table-striped outgoing-table mb-0 min-w-550">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Total</th>
+                    <th>Ratio</th>
+                    <th>Objective</th>
+                    <th>Variation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Appointment Shows</td>
+                    <td>180</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>% of Show > Sold</td>
+                    <td>113</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>% of Show > Sold</td>
+                    <td>113</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>% of Show > Sold</td>
+                    <td>113</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>% of Show > Sold</td>
+                    <td>113</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>% of Show > Sold</td>
+                    <td>113</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <!-- JavaScript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="js/chart.js"></script>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>
